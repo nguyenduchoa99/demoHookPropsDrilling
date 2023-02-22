@@ -1,0 +1,42 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"settings": {
+		"react": {
+			"version": "18.2.0"
+		}
+	},
+
+	"plugins": ["react"],
+	"extends": ["standard", "react-app", "prettier"],
+
+	"rules": {
+		// JS
+		"arrow-body-style": ["error", "as-needed"],
+
+		// React
+		"react/function-component-definition": [
+			"error",
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"react/self-closing-comp": [
+			"error",
+			{
+				"html": true,
+				"component": true
+			}
+		]
+	},
+
+	"overrides": []
+}

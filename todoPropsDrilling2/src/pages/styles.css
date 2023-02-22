@@ -1,0 +1,25 @@
+.header {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.header__title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 57.6px;
+	color: #fff;
+}
+
+.todo-container-wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: calc(100vh - 100px);
+}
+
+.todo-container {
+	width: 550px;
+	margin: 40px auto;
+}
